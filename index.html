@@ -5,6 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Component Library</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
     <h1>Rohan singh Component Library</h1>
@@ -17,33 +18,34 @@
     <h2>this is second biggest heading</h2>
     <p>let me show you normal text. Thhis is free flowing and will wrap at the end of line.</p>
     <small>This is relatively smaller text</small>
+    <p>This paragraph will have <strong>bold</strong> text</p>
     
     
     <hr>
     
     
     <h2>@Container</h2>
-    <h3>fluid container</h3>
-    <div>This is fluid container and it will go till the end of the Page</div>
+    <h3 >fluid container</h3>
+    <div class ="container container-fluid">This is fluid container and it will go till the end of the Page</div>
 
     <h3>center container</h3>
-    <div>This is center container and it will go till the specified width</div>
+    <div class="container container-center">This is center container and it will go till the specified width</div>
 
     <hr>
 
     <h2>@links</h2>
-    <a href="/">Primary links</a>
-    <a href="/">Secondary links</a>
+    <a class="links link-primary" href="/">Primary links</a>
+    <a class="links link-secondary" href="/">Secondary links</a>
 
     <hr>
 
     <h2>@lists</h2>
 
-    <h3>Unorderd list</h3>
-    <ul>
-        <li>list one</li>
-        <li>list Two</li>
-        <li>list Three</li>
+    <h3>Unorderd Inline list</h3>
+    <ul class="list-non-bullet">
+        <li class="list-item-inline">list one</li>
+        <li class="list-item-inline">list Two</li>
+        <li class="list-item-inline">list Three</li>
     </ul>
 
     <h3>Orderd list</h3>
@@ -64,43 +66,61 @@
     <hr>
     
     <h2>@nav</h2>
-    <div>i am brand</div>
-    <ul>
-        <li><a href="/">Home</a></li>
-        <li><a href="/">Projects</a></li>
-        <li><a href="/">Blogs</a></li>
+    <nav class="navigation container">
+    <div class= "nav-brand">iAmBrand</div>
+    <ul class="list-non-bullet nav-pills">
+        <li class="list-item-inline"><a class="links link-active" href="/">Home</a></li>
+        <li class="list-item-inline"><a class="links" href="/">Projects</a></li>
+        <li class="list-item-inline"><a class="links" href="/">Blogs</a></li>
     </ul>
+
+    </nav>
 
     <hr>
 
     <h2>@heading</h2>
 
-    <header>
-        <img src="images/hero.png" alt="">
-        <h1>Heading inside hero</h1>
+    <header class="hero">
+        <img class="hero-img" src="images/hero.png" alt="">
+        <h1 class="hero-heading">I am Rohan Singh <span class="heading-inverted">The Web Developer</span> </h1>
     </header>
 
     <hr>
 
     <h2>@section</h2>
     
-    <section>
-    <h3>Off white section section</h3>
-    <p>This will have white bakground</p>
+    <section class="section">
+        <div class="container-center">
+            <h1> white section </h1>
+            <p>This will have white background.Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged.</p>
+            
+        </div>
+    
+    </section>
+
+    <section class="section ow">
+        <div class="container-center">
+            <h1>Off white section section</h1>
+            <p>This will have gray background.Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged.</p>
+
+        </div>
+        
     </section>
 
     <hr>
-
     <h2>@footer</h2>
+    <footer class="footer">
 
-    <div>Some small heading inside footer</div>
+    <div class="footer-header">Some small heading inside footer</div>
 
-    <ul>
-        <li><a href="/">linkedin</a></li>
-        <li><a href="/">Twitter</a></li>
-        <li><a href="/">github</a></li>
+    <ul class="social-links list-non-bullet">
+        <li class="list-item-inline"><a class="links" href="/">linkedin</a></li>
+        <li class="list-item-inline"><a class="links" href="/">Twitter</a></li>
+        <li class="list-item-inline"><a class="links" href="/">github</a></li>
         
     </ul>
+
+    </footer>
     
 
 
