@@ -151,3 +151,11 @@ hr {
 .footer .social-links {
     padding-inline-start: 0px;
 }
+
+.mark{
+
+    background-color: black;
+    border: 1px solid black;
+    color: aliceblue;
+    border-radius: 0.5rem;
+}
