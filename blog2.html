@@ -5,59 +5,116 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Blog2</title>
+    <style>
+        span{
+            font-weight: bold;
+        }
+    </style>
 </head>
 <body>
     <center>
-        <h2 style="color: blue;">How to prepare for GATE Exam</h2>
-    
-    
-
-    <h3>Why GATE ?</h3>
-
-    <p>
-        After engineering GATE is one of the opening doors for getting into IIT 
-        <br> and getting more oportunities from top product based companies.
-        <br> If you want to get into PSU or want to pursue masters from foriegn universities
-        <br> you should attempt GATE. If you are intrested in Research work then you should definitely go for 
-        <br> GATE.
-    </p>
-
-
-    <h3>Subjects to prepare</h3>
-    <ul style="list-style: none;">
-        <li>Data Structure</li>
-        <li>Algorithms</li>
-        <li>DBMS</li>
-        <li>Compiler Design</li>
-        <li>Operating system</li>
-        <li>TOC</li>
-        <li>Computer Architecture</li>
-        <li>Discrete Mathematics</li>
-        <li>Engineering Mathematics</li>
-        <li>Computer network</li>
-        <li>Aptitude</li>
-        <li>Digital Logic</li>
-    </ul>
-
-    <h3>Time required to Prepare</h3>
-    <p>
-        Even if you are a complete Begineer you need to give atleast 6 months to prepare for this Exam.
-        <br> Mostly people start preparng for it in the month of August and end it till January.
-        <br> Exam is conducted in the month of Februry for all the branches.
-    </p>
-
-    <h3>Resources to prepare</h3>
-    <ul style="list-style: none;">
-        <li>GAtE previous years Questions</li>
-        <li>Video Lectures of GATE smasher and sanchit jain on youtube</li>
-        <li>Standard books for all Subjects</li>
-        <li>Paid video lectures of GATE</li>
-        <li>Offline Coaching </li>
-        <li>GAte overflow Website</li>
-        <li>Test Series of diffrent</li>
-    </ul>
-
+        <h2 style="color: blue;">Hypothesis Testing in Machine Learning</h2>  
 </center>
+
+<h1>What is Hypothesis Testing?</h1>
+
+<p>
+    We can interpret data by assuming a specific structure of our outcome and use statistical methods to confirm or reject the assumption. <br> 
+    The assumption is called a hypothesis and the statistical tests used for this purpose are called statistical hypothesis tests. <br>
+
+    <br>
+    <br>
+
+    Whenever we want to make claims about the distribution of data or whether one set of results are different from another set of results in applied machine learning,  <br>
+    we must rely on statistical hypothesis tests. <br>
+
+    <br>
+
+    <br>
+
+    Hypothesis testing is a statistical approach that is used with experimental data to make statistical decisions. <br>
+     This is used to determine whether an experiment performed offers ample evidence to reject a proposal <br>
+        <br>
+     A Null Hypothesis implies that there is no strong difference in a given set of observations.
+
+     <br>
+
+     The basic assumption of a statistical test is called the null hypothesis, <br>
+     and we can quantify and interpret statistical measurements to determine if the null hypothesis should be accepted or not. <br>
+
+     We are interested to learn whether there is an actual or statistically meaningful <br>
+     difference between the two models when choosing models based on their estimated skills. <br>
+
+</p>
+
+<h1>TERMINOLOGY</h1>
+<p>
+    <ul>
+        <li> <span>Null Hypothesis:</span>  the hypothesis that sample observations result purely from chance. The null hypothesis tends to state that there’s no change.</li>
+        <li><span>Alternative Hypothesis:</span> the hypothesis that sample observations are influenced by some non-random cause.</li>
+        <li><span>P-value:</span> the probability of obtaining the observed results of a test, assuming that the null hypothesis is correct; a smaller p-value means that there is stronger evidence in favor of the alternative hypothesis.</li>
+        <li><span>Alpha:</span> the significance level; the probability of rejecting the null hypothesis when it is true — also known as Type 1 error</li>
+    </ul>
+</p>
+
+
+<h1>Steps for Hypothesis Testing</h1>
+<p>
+    <ol>
+        Here are the steps to performing a hypothesis test:
+        <br>
+        <br>
+        <li> State your null and alternative hypotheses. *To reiterate, the null hypothesis typically states that everything is as normally was — that nothing has changed.*</li>
+        <li>Set your significance level, the alpha. This is typically set at 5% but can be set at other levels depending on the situation and how severe it is to committing a type 1 and/or 2 error</li>
+        <li>Collect sample data and calculate sample statistics.</li>
+        <li>Calculate the p-value given sample statistics.</li>
+        <li>Reject or do not reject the null hypothesis.</li>
+    </ol>
+</p>
+
+<h1>Interpret Critical Value</h1>
+
+<p>
+    Some tests do not return a p-value.
+    <br>
+    <br>
+    Instead, they might return a list of critical values and their associated significance levels, as well as a test statistic. <br>
+    These are usually nonparametric or distribution-free statistical hypothesis tests <br>
+
+    The choice of returning a p-value or a list of critical values is really an implementation choice. <br>
+    <br>
+    <br>
+
+    The results are interpreted in a similar way. <br>
+    Instead of comparing a single p-value to a pre-specified significance level, <br>
+    the test statistic is compared to the critical value at a chosen significance level. <br>
+    <br>
+
+    <ul>
+        <li>If test statistic < critical value: Fail to reject the null hypothesis.</li>
+        <li>If test statistic >= critical value: Reject the null hypothesis.</li>
+    </ul>
+    <br>
+    <br>
+    Again, the meaning of the result is similar in that the chosen significance level is a <br>
+    probabilistic decision on rejection or fail to reject the base <br>
+    assumption of the test given the data. <br>
+    <br>
+    Results are presented in the same way as with a p-value, as either significance level or confidence level. <br>
+    For example, if a normality test was calculated and the test statistic was compared to the critical value at the <br>
+    5% significance level, results could be stated as: <br>
+
+    <br>
+
+    The test found that the data sample was normal, failing to reject the null hypothesis at a 5% significance level.
+
+    <br>
+     OR
+     <br>
+     The test found that the data sample was normal, failing to reject the null hypothesis at a 5% significance level.
+
+</p>
+
     
 </body>
 </html>
