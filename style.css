@@ -8,6 +8,7 @@ body {
 :root {
 
     --primary-color: #6EE7B7;
+    --secondary-color: #ccfbf1;
     --dark-gray: #D1D5DB;
 }
 
@@ -104,6 +105,7 @@ hr {
     max-width: 350px;
     display: block;
     margin: auto;
+    /* border-radius: 30%; */
 
 }
 
@@ -158,4 +160,29 @@ hr {
     border: 1px solid black;
     color: aliceblue;
     border-radius: 0.5rem;
+}
+
+.meta-data-container{
+    display: flex;
+    justify-content: space-between;
+}
+
+.tag{
+    background-color: var(--dark-gray);
+    border: 1px solid black;
+    border-radius: 5%;
+}
+.tag-coming-soon{
+    background-color: var(--primary-color);
+    border: 1px solid black;
+    border-radius: 5%; 
+}
+.tag-category{
+    background-color: var(--secondary-color);
+    border: 1px solid green;
+    border-radius: 5%; 
+}
+.blog-list{
+    display: flex;
+    justify-content: space-between;
 }
